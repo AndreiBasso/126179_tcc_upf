@@ -8,7 +8,7 @@ ini_set(“display_errors”, 0 );
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  * 
- * Andrei Basso ---------------
+ * Andrei Basso
  * 
  */
 
