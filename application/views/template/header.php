@@ -108,7 +108,6 @@ desired effect
       <ul class="sidebar-menu">
         <<li class="header" ><b><font color="#FFFFFF"><font size="3">Menu Sistema</font></font></b></li>
         <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="<?php echo base_url('index.php/funcionarios/index'); ?>"><i class="fa fa-users"></i> <span>Funcionários</span></a></li>
         <li class="active"><a href="<?php echo base_url('index.php/pops/index'); ?>"><i class="fa fa-users"></i> <span>Pops</span></a></li>
         <li class="active"><a href="<?php echo base_url('index.php/cliente/index'); ?>"><i class="fa fa-users"></i> <span>Clientes</span></a></li>
         <li class="active"><a href="<?php echo base_url('index.php/equipamentos/index'); ?>"><i class="fa fa-users"></i> <span>Equipamentos</span></a></li>
@@ -116,6 +115,7 @@ desired effect
         <li class="active"><a href="<?php echo base_url('index.php/grafico/index'); ?>"><i class="fa fa-users"></i> <span>Gráficos</span></a></li>
         <li class="active"><a href="<?php echo base_url('index.php/pdf/index'); ?>"><i class="fa fa-users"></i> <span>Relatórios PDF</span></a></li>
         <li class="header" ><b><font color="#FFFFFF"><font size="3">Menu Admin</font></font></b></li>
+		<li class="active"><a href="<?php echo base_url('index.php/funcionarios/index'); ?>"><i class="fa fa-users"></i> <span>Funcionários</span></a></li>
         <li class="active"><a href="<?php echo base_url('index.php/user/index'); ?>"><i class="fa fa-users"></i> <span>Gerenciar Usuários</span></a></li>
       </ul>
       <!-- /.sidebar-menu -->

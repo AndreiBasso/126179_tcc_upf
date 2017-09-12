@@ -5,7 +5,7 @@
       Anything you want
     </div>
     <!-- Default to the left -->
-    <strong>Deus é top <a href="#">Company</a>.</strong> All rights reserved.Andrei Basso
+    <strong>Deus é top <a href="#">Company</a>.</strong> All rights reserved Andrei Basso
   </footer>
 
   <!-- Control Sidebar -->
