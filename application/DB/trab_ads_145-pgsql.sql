@@ -2,7 +2,7 @@
 --
 -- Database: 'trab_ads_145'
 --
-
+--
 -- --------------------------------------------------------
 --
 -- Estrutura da tabela 'funcionarios'
