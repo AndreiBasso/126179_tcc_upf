@@ -47,20 +47,25 @@
                     <?php } ?>
                 </select>
             </div>
-                 <div class="form-group">
-                    <label>Voltagem: *</label>
-                    <input class="form-control" type="text" name="vol" required 
-                           value="<?php if (isset($pops)) echo $pops['vol']; ?>"/> 
-                </div>  
+
+
                 <div class="form-group">
-                    <label>Acesso: **</label>
-                    <input class="form-control" type="text" name="acesso" required 
-                           value="<?php if (isset($pops)) echo $pops['acesso']; ?>"/>
-                </div>  
-                * Somente permetido valores (-48,110,220)
-                <p></p>
-                ** Somente permetido valores (Liberado, Restrito)
-                <p></p>
+                <label for='permissao'>Voltagem:</label><br>
+                 <input type="radio" name="vol" value="-48" <?php if (isset($pops) && $pops['vol']==='-48') echo "checked"; ?>> -48
+                 <input type="radio" name="vol" value="110" <?php if (isset($pops) && $pops['vol']==='110') echo "checked"; ?>> 110
+                 <input type="radio" name="vol" value="220" <?php if (isset($pops) && $pops['vol']==='220') echo "checked"; ?>> 220
+         
+            </div> 
+                
+
+                <div class="form-group">
+                <label for='permissao'>Acesso:</label><br>
+                 <input type="radio" name="acesso" value="Liberado" <?php if (isset($pops) && $pops['acesso']==='Liberado') echo "checked"; ?>> Liberado 
+                 <input type="radio" name="acesso" value="Restrito" <?php if (isset($pops) && $pops['acesso']==='Restrito') echo "checked"; ?>> Restrito
+         
+            </div> 
+
+               
                 <input type="submit" value="Salvar"/> 
             </form>
     </section>

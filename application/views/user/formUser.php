@@ -31,12 +31,15 @@
                     <label>Senha:</label>
                     <input class="form-control" type="text" name="senha" required 
                            value="<?php if (isset($user)) echo $user['']; ?>"/> 
-                </div>   
-                    <div class="form-group">
-                    <label>Permissão:</label>
-                    <input class="form-control" type="text" name="permissao" required 
-                           value="<?php if (isset($user)) echo $user['permissao']; ?>"/> 
-                </div>   
+  
+
+                <div class="form-group">
+                <label for='permissao'>Permissão:</label><br>
+                 <input type="radio" name="permissao" value="user" <?php if (isset($user) && $user['permissao']==='user') echo "checked"; ?>> User 
+                 <input type="radio" name="permissao" value="admin" <?php if (isset($user) && $user['permissao']==='admin') echo "checked"; ?>> Admin
+         
+            </div> 
+
                 <input type="submit" value="Enviar"/> <a href="index">
             </form>
     </section>

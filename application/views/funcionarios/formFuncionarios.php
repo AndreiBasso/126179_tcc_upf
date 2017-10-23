@@ -36,15 +36,15 @@
                        value="<?php if (isset($funcionarios)) echo $funcionarios['data']; ?>"/>
             </div>                   
             <div class="form-group">
-                <label for='telefone'>Telefone:</label>
-                <input class="form-control" type="text" name="telefone" required 
-                       value="<?php if (isset($funcionarios)) echo $funcionarios['telefone']; ?>"/>
+                <label for='telefone'>Telefone Celular:</label>
+                <input class="form-control" type="tel" name="telefonefuncionarios" pattern="\(\d{2}\)\d{5}-\d{4}" required 
+                       value="<?php if (isset($funcionarios)) echo $funcionarios['telefonefuncionarios']; ?>"/>
             </div>
 
             <div class="form-group">
                     <label>E-mail:</label>
-                    <input class="form-control" type="text" name="email" required 
-                           value="<?php if (isset($funcionarios)) echo $funcionarios['email']; ?>"/> 
+                    <input class="form-control" type="text" name="emailfuncionarios" required 
+                           value="<?php if (isset($funcionarios)) echo $funcionarios['emailfuncionarios']; ?>"/> 
                 </div>  
                <div class="form-group">
                 <label for='funcao'>Função:</label>

@@ -22,9 +22,9 @@
                 <th>Código:</th>
                 <th>Nome:</th>                
                 <th>Endereço:</th>             
-                <th>Telefone:</th>                
+                <th>Telefone Celular:</th>                
                 <th>E-mail:</th>  
-                <th>Pop:</th>  
+                <th>Pop:</th> 
                 <th></th>
                 <th></th>
             </thead>
@@ -36,7 +36,7 @@
                     <td><?= $cliente['enderecocliente']; ?></td>                                       
                     <td><?= $cliente['telefone']; ?></td>                    
                     <td><?= $cliente['email']; ?></td>  
-                    <td><?= $cliente['pops']; ?></td> 
+                    <td><?= $cliente['pops']; ?></td>
                     <td>
                         <a class="btn btn-warning"
                             href="<?php echo base_url('index.php/cliente/editar/'.$cliente['id']); ?>">

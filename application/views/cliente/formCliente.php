@@ -18,6 +18,7 @@
 
         <!-- Your Page Content Here -->
 
+        
 
         <form name="cliente" action="<?= $acao; ?>" method="POST">
 <!--            <div class="form-group">
@@ -36,8 +37,8 @@
                            value="<?php if (isset($cliente)) echo $cliente['enderecocliente']; ?>"/> 
                 </div>
                    <div class="form-group">
-                    <label>Telefone:</label>
-                    <input class="form-control" type="text" name="telefone" required 
+                    <label>Telefone Celular:</label>
+                    <input class="form-control" type="tel" name="telefone" pattern="\(\d{2}\)\d{5}-\d{4}" required 
                            value="<?php if (isset($cliente)) echo $cliente['telefone']; ?>"/> 
                 </div>
 
@@ -57,6 +58,10 @@
                     <?php } ?>
                 </select>
             </div>
+            
+
+ 
+     
                       
             <input type="submit" value="Salvar"/>  <a href="index">
         </form>

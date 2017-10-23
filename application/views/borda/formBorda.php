@@ -3,13 +3,13 @@
     <section class="content-header">
         
         <h1>
-            Manutenção de Concentradores
+            Manutenção de Monitoramentos
             
             <br></br>
         </h1>
         <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Manutenção</a></li>
-            <li class="active">Concentradores</li>
+            <li class="active">Monitoramentos</li>
         </ol>
     </section>
 
@@ -30,7 +30,7 @@
                            value="<?php if (isset($borda)) echo $borda['nomeborda']; ?>"/> 
                 </div>
                    <div class="form-group">
-                    <label>Classe de IPV4:</label>
+                    <label>Ip:</label>
                     <input class="form-control" type="text" name="descri" required 
                            value="<?php if (isset($borda)) echo $borda['descri']; ?>"/> 
                 </div>
@@ -63,6 +63,7 @@
                 </select>
             </div>
                       
+
             <input type="submit" value="Enviar"/> 
         </form>
     </section>

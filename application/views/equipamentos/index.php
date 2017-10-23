@@ -34,14 +34,14 @@
                 <th>Excluir</th>
             </thead>
             <tbody>
-                <?php foreach ($registros as $item) {?>
+                <?php foreach ($registros as $item) { if($item['idequipamentos']!='999'){ ?>
                 <tr>
                     <td><?php echo $item['idequipamentos'];?></td>
                     <td><?php echo $item['nomeequipamentos'];?></td>
                     <td><?php echo $item['datacompra'];?></td>
                     <td><?php echo $item['quantidade'];?></td>
-                    <td><?php echo $item['valor_unitario'];?></td>
-                    <td><?php echo $item['valor_unitario'] * $item['quantidade'];?></td>
+                    <td>R$ <?php echo $item['valor_unitario'];?></td>
+                    <td>R$ <?php echo $item['valor_unitario'] * $item['quantidade'];?></td>
                     <td>
                         <a class="btn btn-warning"
                             href="<?php echo base_url('index.php/equipamentos/atualizar/'.$item['idequipamentos']); ?>">
@@ -55,7 +55,7 @@
                         </a>
                     </td>
                 </tr>
-                <?php }?>
+                <?php }}?>
             </tbody>    
         </table>
 

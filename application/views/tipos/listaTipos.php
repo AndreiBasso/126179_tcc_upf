@@ -7,7 +7,7 @@
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Manutenções</a></li>
-        <li class="active">Venda</li>
+        <li class="active">Serviços</li>
       </ol>
     </section>
      <?php if (isset($mensagem)) { ?>
@@ -17,7 +17,7 @@
     <?php } ?>
 
     <a class="btn btn-success"
-            href="<?php echo base_url('index.php/equipamentos/gravar'); ?>"/>
+            href="<?php echo base_url('index.php/tipos/gravar'); ?>"/>
             <i class=""> </i> Adcionar
     </a>
     <!-- Main content -->
@@ -27,36 +27,30 @@
             <thead>
                 <th>Código:</th>
                 <th>Nome:</th>
-                <th>Data da Compra: (AAAA/MM/DD)</th>
-                <th>Quantidade:</th>
-                <th>Valor Unitário:</th>
-                <th>Valor Total:</th>                
+                <th>Tempo:</th>       
                 <th></th>
                 <th></th>
             </thead>
             <tbody>
-            <?php foreach ($listaEquipamentos as $equipamentos) { if($item['idequipamentos']!='999'){ ?>
+            <?php foreach ($listaTipos as $tipos) { ?>
                 <tr>
-                    <td><?= $equipamentos['idequipamentos']; ?></td>
-                    <td><?= $equipamentos['nomeequipamentos']; ?></td>
-                    <td><?= $equipamentos['datacompra']; ?></td>                    
-                    <td><?= $equipamentos['quantidade']; ?></td>                    
-                    <td>R$ <?= $equipamentos['valor_unitario']; ?></td>                    
-                    <td>R$ <?= $equipamentos['valor_unitario'] * $equipamentos['quantidade']; ?></td>                    
+                    <td><?php echo $item['idtipos'];?></td>
+                    <td><?php echo $item['nometipos'];?></td>
+                    <td><?php echo $item['tempo'];?></td>            
                     <td>
                         <a class="btn btn-warning"
-                            href="<?php echo base_url('index.php/equipamentos/editar/'.$equipamentos['idequipamentos']); ?>">
+                            href="<?php echo base_url('index.php/tipos/editar/'.$tipos['idtipos']); ?>">
                             Editar
                         </a>
                     </td>
                     <td>
                         <a class="btn btn-danger"
-                            href="<?php echo base_url('index.php/equipamentos/excluir/'.$equipamentos['idequipamentos']); ?>">
+                            href="<?php echo base_url('index.php/tipos/excluir/'.$tipos['idtipos']); ?>">
                             Excluir
                         </a>
                     </td>                    
                 </tr>
-            <?php }} ?>
+            <?php } ?>
             </tbody>
         </table>    
 </div>

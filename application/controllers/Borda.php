@@ -72,5 +72,4 @@ class Borda extends CI_Controller{
         if($this->borda_model->excluir($id)) $this->index ();
         else echo "Erro ao tentar excluir o registro";
     }
-
 }

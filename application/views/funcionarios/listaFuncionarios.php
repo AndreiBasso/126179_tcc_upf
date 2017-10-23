@@ -35,13 +35,15 @@
                 <th></th>
             </thead>
             <tbody>
-            <?php foreach ($listaFuncionarios as $funcionarios) { ?>
+            <?php foreach ($listaFuncionarios as $funcionarios) { if($item['idfuncionarios']!='999'){
+                
+             ?>
                 <tr>
                     <td><?php echo $item['idfuncionarios'];?></td>
                     <td><?php echo $item['nomefuncionarios'];?></td>
                     <td><?php echo $item['data'];?></td>
-                    <td><?php echo $item['telefone'];?></td>
-                    <td><?php echo $item['email'];?></td>
+                    <td><?php echo $item['telefonefuncionarios'];?></td>
+                    <td><?php echo $item['emailfuncionarios'];?></td>
                     <td><?php echo $item['funcao'];?></td>             
                     <td>
                         <a class="btn btn-warning"
@@ -56,7 +58,7 @@
                         </a>
                     </td>                    
                 </tr>
-            <?php } ?>
+            <?php }} ?>
             </tbody>
         </table>    
 </div>

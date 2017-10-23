@@ -2,10 +2,11 @@
   <footer class="main-footer">
     <!-- To the right -->
     <div class="pull-right hidden-xs">
-      Anything you want
+      Andrei Basso
     </div>
     <!-- Default to the left -->
-    <strong>Deus é top <a href="#">Company</a>.</strong> All rights reserved Andrei Basso
+    <strong>Grupo Minozzo</strong>
+ - Todos os direitos reservados.
   </footer>
 
   <!-- Control Sidebar -->
